@@ -1,5 +1,8 @@
 # Almanac — A vertical-video content pipeline for small brands
 
+> **Almanac exists to serve one doctrine: the warm hug for the ICP, never the pitch.**
+> The whole architecture — verified_facts injection, per-beat content contract, per-brand researchers anchored on real-world structured data (ephemerides / PubMed / album anniversaries / cultural calendars) — is in service of that single rule. Almanac is the warm-hug doctrine made executable. The doctrine came first; the pipeline serves the doctrine.
+
 Formerly `sp2-hyperframes`. Renamed 2026-05-16 to reflect what the system actually does: each brand has its own *almanac* — a structured spine of dates, ephemerides, anniversaries, cultural calendars — and the pipeline draws daily readings from it.
 
 A production-grade pipeline that turns a real-world topic into a 30-second 9:16 vertical video with karaoke captions, ready to post to TikTok / Instagram Reels / Pinterest. Around **$0.33 per video** in API costs.

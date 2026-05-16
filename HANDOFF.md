@@ -1,3 +1,9 @@
+# Almanac — Dev Log
+
+> **WHY ALMANAC EXISTS (the founding doctrine):** Almanac was built *for*, *via*, and *with* the **warm-hug doctrine**. Every architectural choice — the 7-beat per-beat contract, the `verified_facts` injection, the universal "no products in script body" rule, the per-brand researchers that pull from real-world structured spines (ephemerides / PubMed / album anniversaries / cultural calendars) — exists to serve one rule: **warm hug for the ICP, never the pitch.** The brand sells itself via outro card + bio. The script's only job is to be a story, a fact, a moment of value the viewer actually wants. Almanac is the doctrine made executable. Strip away the karaoke captions, the AI music, the FLUX illustrations, the WhisperX timing — and the doctrine remains. The doctrine is the founding act. Everything else serves it. — Jon, locked 2026-05-15, named Almanac 2026-05-16
+
+---
+
 # SP2 Video Skill — Session Handoff
 **Last updated:** 2026-05-16 morning (after overnight 2026-05-15 hardening session)
 **Cost spent:** $2.31 across 6 WLH smoke tests
