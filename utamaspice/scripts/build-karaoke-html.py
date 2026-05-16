@@ -251,8 +251,12 @@ def build(cfg_path):
       scenes.forEach((sc, i) => {{
         if (sc.bgType === "title") {{
           gsap.set(sc.id, {{ opacity: 1 }});
-          tl.fromTo(sc.id + " .title-text", {{ y: 22, opacity: 0, scale: 0.97 }}, {{ y: 0, opacity: 1, scale: 1.0, duration: 0.50, ease: "expo.out" }}, 0.05);
-          tl.fromTo(sc.id + " .title-brandmark", {{ opacity: 0 }}, {{ opacity: 1, duration: 0.40, ease: "power2.out" }}, 0.22);
+          // Frame 0 = peak title (Meta + TikTok use mp4 frame 0 as preview
+          // tile). Skip the entrance fade-in so the very first rendered
+          // frame is the fully-composed title card. The fade-OUT at the
+          // end of title_duration is preserved below.
+          gsap.set(sc.id + " .title-text", {{ opacity: 1, y: 0, scale: 1.0 }});
+          gsap.set(sc.id + " .title-brandmark", {{ opacity: 1 }});
           tl.to(sc.id, {{ opacity: 0, duration: 0.28, ease: "sine.inOut" }}, Math.max(0, sc.duration - 0.20));
           return;
         }}
