@@ -368,7 +368,7 @@ Return ONLY valid JSON, no markdown fences, no preamble. Schema:
 # -------------------------------------------------------------------- freepik
 def freepik_fetch(query: str, env: dict, out_path: Path) -> Path:
     """Search Freepik, download top vertical premium image to out_path."""
-    api_key = env.get("FREEPIK_API_KEY") or die("missing FREEPIK_API_KEY")
+    api_key = env.get("FREEPIK_API_KEY") or env.get("FREEPIK_API") or die("missing FREEPIK_API_KEY (or FREEPIK_API)")
     qs = urllib.parse.urlencode(
         {
             "term": query,
@@ -405,7 +405,7 @@ def freepik_fetch_video(
     Picks the first 9:16 1080p result whose duration covers min_duration.
     Raises on no usable result; caller may catch + fall back to freepik_fetch (image).
     """
-    api_key = env.get("FREEPIK_API_KEY") or die("missing FREEPIK_API_KEY")
+    api_key = env.get("FREEPIK_API_KEY") or env.get("FREEPIK_API") or die("missing FREEPIK_API_KEY (or FREEPIK_API)")
     qs = urllib.parse.urlencode({"term": query, "limit": 10})
     url = f"https://api.freepik.com/v1/videos?{qs}"
     data = http_json(url, headers={"x-freepik-api-key": api_key})
@@ -494,7 +494,7 @@ def elevenlabs_tts(text: str, voice_id: str, env: dict, out_path: Path) -> Path:
 
 # -------------------------------------------------------------------- replicate
 def replicate_run(model: str, version: str | None, input_payload: dict, env: dict) -> dict:
-    token = env.get("REPLICATE_API_TOKEN") or die("missing REPLICATE_API_TOKEN")
+    token = env.get("REPLICATE_API_TOKEN") or env.get("REPLICATE_API") or die("missing REPLICATE_API_TOKEN (or REPLICATE_API)")
     if version:
         url = "https://api.replicate.com/v1/predictions"
         body = json.dumps({"version": version, "input": input_payload})
