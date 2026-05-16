@@ -2,7 +2,7 @@
   "//meta": "SP2 brand.json template. Copy to <repo-root>/<brand-slug>/brand.json and fill in. Comment fields (keys starting with //) get stripped at parse time.",
 
   "brand": "<brand-slug>",
-  "//brand": "Lowercase no-spaces slug. Must match dir name under sp2-hyperframes/ and dispatcher YAML filename.",
+  "//brand": "Lowercase no-spaces slug. Must match dir name under almanac/ and dispatcher YAML filename.",
   "display_name": "<Brand Display Name>",
 
   "voice_id": "<elevenlabs-voice-id>",
