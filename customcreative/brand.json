@@ -1,0 +1,48 @@
+{
+  "brand": "customcreative",
+  "display_name": "Custom Creative",
+  "voice_id": "gyIv9PAQRvJjSZlk68oE",
+  "voice_label": "Darius (ElevenLabs, male, hip-hop)",
+  "primary_color": "#facc15",
+  "canvas_bg": "#0a0a0a",
+  "tagline": "Beat Notes",
+  "outro_top": "Wear the culture.",
+  "outro_bottom": "Own the block.",
+  "brand_mark": "Custom Creative",
+  "display_font": "Anton",
+  "body_font": "Inter",
+  "cloudinary_folder": "cc_sp2_videos",
+  "metricool_blog_id": 4734689,
+  "social_handle": "@customxcreative",
+  "social_queue": {
+    "type": "airtable",
+    "base_id": "appbM0PPRQbwi8g5a",
+    "table_id": "tblGmPRpbbHo177el",
+    "status_field": "Status",
+    "ready_value": "Queued",
+    "in_progress_value": "In Progress",
+    "used_value": "Used",
+    "topic_field": "Topic",
+    "angle_field": "Research Brief",
+    "notes_field": "Platform Fit",
+    "sort_field": "Date Added",
+    "sort_direction": "asc"
+  },
+  "wp_url": "https://customcreative.store",
+  "freepik_priority": ["premium", "free"],
+  "subreddits": ["r/hiphopheads", "r/HipHopVinyl", "r/Wutangclan", "r/streetwear", "r/EveryDayCarry"],
+  "anti_patterns": [
+    "no em-dashes in captions or titles",
+    "no 'urban' as an adjective",
+    "no generic 'rap' references — name the era, the record, the producer",
+    "no corporate hip-hop clichés or whitewashed phrasing",
+    "no aggressive shaky-cam transitions — clean cuts and crossfades only",
+    "no rainbow gradients on dark bg (H.264 banding)"
+  ],
+  "brand_voice": "Hip-hop merch with cultural authority. Street-level, no posturing. References real records, real eras, real gear. Energy with reverence. Aimed at people who actually know.",
+  "music_prompt": "lo-fi hip-hop instrumental, 90bpm, dusty boom-bap drums, vinyl crackle, soulful chops, no vocals, no scratching",
+  "beat_sync": {
+    "enabled": true,
+    "snap_window_sec": 0.45
+  }
+}

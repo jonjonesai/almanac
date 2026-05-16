@@ -1,0 +1,51 @@
+{
+  "brand": "taiwanmerch",
+  "display_name": "Taiwan Merch",
+  "voice_id": "TX3LPaxmHKxFdv7VOQHJ",
+  "voice_label": "Liam (ElevenLabs, male, American, energetic social-media creator)",
+  "primary_color": "#06b6d4",
+  "canvas_bg": "#0d0e14",
+  "tagline": "Island Notes",
+  "outro_top": "Wear the island.",
+  "outro_bottom": "Carry the night.",
+  "brand_mark": "Taiwan Merch",
+  "display_font": "Oswald",
+  "body_font": "Inter",
+  "cloudinary_folder": "tm_sp2_videos",
+  "metricool_blog_id": 5955832,
+  "social_handle": "@taiwanmerch",
+  "social_queue": {
+    "type": "airtable",
+    "base_id": "apphzFSaDDSX8FFMx",
+    "table_id": "tblyQ7FeT2OTMUEPX",
+    "status_field": "Status",
+    "ready_value": "Queued",
+    "in_progress_value": "In Progress",
+    "used_value": "Used",
+    "topic_field": "Topic",
+    "angle_field": "Research Brief",
+    "notes_field": "Platform Fit",
+    "sort_field": "Date Added",
+    "sort_direction": "asc"
+  },
+  "wp_url": "https://taiwanmerch.co",
+  "media_style": "illustration",
+  "illustration_style_suffix": "in the style of Studio Ghibli watercolor anime, hand-painted Taiwanese mountain town scene, soft atmospheric night light with warm lantern glow, cinematic 9:16 vertical composition, moody, painterly, no text, no logos",
+  "prefer_video_clips": false,
+  "freepik_priority": ["premium", "free"],
+  "subreddits": ["r/taiwan", "r/Taipei", "r/asianeats", "r/streetstyle", "r/travel"],
+  "anti_patterns": [
+    "no em-dashes in captions or titles",
+    "no orientalism cliches ('exotic', 'mysterious East', 'land of contrasts')",
+    "always name the place — Taipei, Kaohsiung, Tainan, Hualien, Jiufen — not 'Taiwan' as abstract",
+    "always name the food, the night market, the temple if invoked (Shilin, Raohe, Longshan, Lungshan)",
+    "no generic Asian-fusion language — Taiwanese is its own thing",
+    "no Mandarin pinyin in captions unless it's a brand/place name — use English"
+  ],
+  "brand_voice": "Modern Taiwan with affection. Equal parts night-market neon, mountain stillness, and Taipei MRT punctuality. Specific places, specific foods, specific people. References Jiufen lantern lights, Shilin xiaolongbao, Taroko cliffs, Hualien coastline, Kaohsiung container art. Energetic without being touristy. Aimed at people who've been or are about to go.",
+  "music_prompt": "synthwave neon city instrumental, 100bpm, retro 80s drums, atmospheric pads, bright lead synth, no vocals, no scratching",
+  "beat_sync": {
+    "enabled": true,
+    "snap_window_sec": 0.45
+  }
+}

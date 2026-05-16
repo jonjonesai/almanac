@@ -1,0 +1,42 @@
+{
+  "brand": "organicaromas",
+  "display_name": "Organic Aromas",
+  "voice_id": "052jzHJceQiZr7ltnY0C",
+  "voice_label": "Mia (ElevenLabs, female, wellness)",
+  "primary_color": "#2eb0a4",
+  "canvas_bg": "#1a202c",
+  "tagline": "Field Notes",
+  "outro_top": "Choose your air.",
+  "outro_bottom": "Choose your day.",
+  "brand_mark": "Organic Aromas",
+  "display_font": "Playfair Display",
+  "body_font": "Inter",
+  "cloudinary_folder": "oa_sp2_videos",
+  "metricool_blog_id": 4722084,
+  "social_handle": "@organicaromas",
+  "social_queue": {
+    "type": "airtable",
+    "base_id": "appDz92uv0ZnWNcdd",
+    "table_id": "tblni5LeNkLXBLaPz",
+    "status_field": "Status",
+    "ready_value": "Queued",
+    "in_progress_value": "In Progress",
+    "used_value": "Used",
+    "topic_field": "Topic",
+    "angle_field": "Research Brief",
+    "notes_field": "Platform Fit",
+    "sort_field": "Date Added",
+    "sort_direction": "asc"
+  },
+  "wp_url": "https://organicaromas.com",
+  "freepik_priority": ["premium", "free"],
+  "subreddits": ["r/aromatherapy", "r/essentialoils", "r/wellness", "r/cleanliving"],
+  "anti_patterns": [
+    "no em-dashes in captions or titles",
+    "no medical claims",
+    "no bright greens or lime",
+    "no aggressive eases (back/elastic/bounce)",
+    "no hard scene cuts — crossfade only"
+  ],
+  "brand_voice": "Premium wellness meets curious neuroscience. Calm contemplation with scientific precision. Sensory language is the default. Trademark Nebulizing Diffuser® always — never bare diffuser."
+}

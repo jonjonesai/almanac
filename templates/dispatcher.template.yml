@@ -1,0 +1,35 @@
+# SP2 dispatcher job template.
+# Copy to /opt/secondbrain/dispatcher/jobs/sp2-video-<brand-slug>.yml and fill in.
+# After saving, dispatcher reloads on next supervisord cycle (or restart for immediate pickup).
+#
+# CRITICAL: `enabled: false` is the gate. Flip to `true` ONLY after a manual --dryrun smoke-test
+# passes Jon's QA per the Acceptance Criteria in SKILL.md.
+
+name: sp2-video-<brand-slug>
+
+description: >
+  Short description of cadence + brand + style. Example:
+  "Twice-weekly SP2 vertical video for <Brand>. HyperFrames pipeline with
+  <media-mode> backgrounds (<font> + <color> + <voice>). <Days> <HH:MM> Asia/Taipei —
+  <slot rationale: doesn't clash with other brands>. <Network gating: NO TikTok if not
+  connected, IG Reel only via metricool_networks=[...]>. Kill switch — touch
+  $SP2_HEARTBEAT_DIR/DRYRUN. Jon must flip enabled:true after
+  first manual smoke-test live fire passes QA."
+
+# Cron schedule. Use Asia/Taipei reasoning even if dispatcher runs UTC — secondbrain-dispatcher
+# evaluates timezone via tz on the host (Asia/Taipei = WITA for OA/WLH).
+# Pick days/times that DON'T collide with existing brand schedules:
+#   OA   = Mon/Wed/Fri 15:00
+#   CC   = Tue/Thu/Sat 15:00
+#   UT   = Sun/Thu 15:00
+#   TM   = Sun/Tue/Fri 17:00 (scaffolded, disabled)
+#   WLH  = Wed/Sun 19:00 (scaffolded, disabled)
+# For a new brand, find an open slot.
+schedule: "0 <HH> * * <days>"
+
+# Gate. Keep false until smoke-test passes. SKILL.md "Acceptance Criteria" defines what passing means.
+enabled: false
+
+# Invokes the universal SP2 render hook. The hook honors the DRYRUN sentinel and writes per-brand logs.
+command: |
+  /opt/secondbrain/dispatcher/hooks/sp2-render-job.sh <brand-slug>

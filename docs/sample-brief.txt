@@ -1,0 +1,56 @@
+SOURCE: Sample brief for smoke-testing sp2_pipeline.py with verified_facts.
+This is the actual brief used for the welovehoroscope Mars-in-Taurus 2026-05-16 smoke
+test — preserved here as a worked example of the structure.
+
+ANGLE: Mars ingressed Taurus on May 19, 2026. This is the slow-build phase of the
+cycle — every two-year sprint goes from cardinal-fire ignition to fixed-earth grinding.
+The last time Mars ran this same window was June-July 2024. Per-sign action shifts:
+fire signs slow down, earth signs lock in.
+
+KEY POINTS:
+- Mars in Taurus: May 19 → June 29, 2026 (5.7 weeks)
+- Prior Mars-in-Taurus window: June 9 → July 21, 2024
+- Today — Sun in Taurus, Moon in Taurus (New Moon), Pluto Rx in Aquarius
+
+PLATFORM FIT: Instagram Reel (SP2 vertical video, 30s).
+
+VISUAL NOTES: Hand-painted art nouveau cosmic palette, Taurus bull glyph subtle,
+no faces, no products.
+
+BRAND RULE (hard): SCRIPT TELLS THE HOROSCOPE, NEVER SELLS THE MERCH. Zero
+product mention in any beat. Beat 7 is a poetic insight.
+
+[VERIFIED_FACTS_JSON_START]
+{
+  "source": "skyfield + JPL DE421 ephemeris via today_sky.py",
+  "source_run_iso_utc": "2026-05-16T07:30:00Z",
+  "today_iso": "2026-05-16",
+  "today_sun_sign": "Taurus",
+  "today_moon_sign": "Taurus",
+  "today_moon_phase": "New Moon",
+  "event": {
+    "type": "ingress",
+    "planet": "Mars",
+    "from_sign": "Aries",
+    "to_sign": "Taurus",
+    "iso_date": "2026-05-19",
+    "day_of_week": "Tuesday",
+    "days_until": 3
+  },
+  "current_window": {
+    "planet": "Mars",
+    "sign": "Taurus",
+    "start_iso": "2026-05-19",
+    "end_iso": "2026-06-29",
+    "duration_days": 40,
+    "duration_weeks": 5.7
+  },
+  "prior_window": {
+    "planet": "Mars",
+    "sign": "Taurus",
+    "start_iso": "2024-06-09",
+    "end_iso": "2024-07-21",
+    "year": 2024
+  }
+}
+[VERIFIED_FACTS_JSON_END]

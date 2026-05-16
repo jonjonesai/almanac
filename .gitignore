@@ -1,0 +1,64 @@
+# Secrets — NEVER commit
+.env
+.env.local
+*.pem
+*.key
+
+# Renders and media assets (per-fire, can be regenerated)
+*/renders/
+*/assets/
+*.mp4
+*.mov
+*.webm
+*.wav
+*.mp3
+*.flac
+*.jpg
+*.jpeg
+*.png
+
+# But DO keep template + design imagery if any small reference files are added
+!docs/**/*.png
+!docs/**/*.jpg
+
+# Skyfield ephemeris (16MB, auto-downloaded by skyfield on first run)
+de421.bsp
+*.bsp
+
+# Build/composition artifacts
+*/index.html
+*/build_config.json
+*/plan.json
+*/words.json
+*/beats.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.python-version
+
+# Backup files
+*.bak
+*.bak-*
+*~
+
+# Node
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Heartbeat / ledger (Jon-specific local state)
+heartbeat/
+
+# OS
+Thumbs.db
