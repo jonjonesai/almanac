@@ -620,7 +620,7 @@ def replicate_flux(prompt: str, env: dict, out_path: Path) -> Path:
 
 def whisperx_words(voice_path: Path, env: dict) -> list[dict]:
     """Transcribe voice via Replicate WhisperX. Uses data-URI (mp3 is small)."""
-    token = env["REPLICATE_API_TOKEN"]
+    token = env.get("REPLICATE_API_TOKEN") or env.get("REPLICATE_API") or die("missing REPLICATE_API_TOKEN (or REPLICATE_API)")
     # Audio mp3 from ElevenLabs for ~28s narration is ~700KB. Data URI is reliable;
     # Replicate's files API requires proper multipart which urllib doesn't do well.
     b64 = base64.b64encode(voice_path.read_bytes()).decode()
