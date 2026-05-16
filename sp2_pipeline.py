@@ -75,7 +75,12 @@ USER_AGENT = "sp2-pipeline/1.0 (python urllib)"
 
 # -------------------------------------------------------------------- env utils
 def load_env(path: Path) -> dict[str, str]:
-    out = {}
+    """Load env vars from os.environ first (works in Docker containers where
+    env_file is injected by compose into the process env), then overlay any
+    vars from a `.env` file at path (so the file-based workflow on the
+    second-brain dispatcher still works and file values win on conflict).
+    """
+    out = dict(os.environ)
     if not path.exists():
         return out
     for line in path.read_text().splitlines():
