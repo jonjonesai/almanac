@@ -62,3 +62,9 @@ heartbeat/
 
 # OS
 Thumbs.db
+
+# MEGA's own lane — business content, not a reference brand.
+# This repo is PUBLIC. mega/ holds hooks.jsonl (the marketing hook queue and
+# positioning angles), brand.json and daily-ledger.md. It was untracked but NOT
+# ignored, so a single `git add -A` would have published all of it.
+mega/
